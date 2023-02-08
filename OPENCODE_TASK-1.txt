@@ -1,0 +1,59 @@
+Q1. GIT VS GITHUB
+
+
+GIT:
+Git is an extremely popular version control system that is at the heart of a wide variety of high-profile projects. 
+Git is installed and maintained on your local system  and gives you a self-contained record of your ongoing programming versions.
+It can be used completely exclusive of any cloud-hosting service — you don’t even need internet access, except to download it. 
+Compared to other version control systems, Git is responsive, easy to use, and inexpensive (free, actually). 
+Git is also specially designed to work well with text files — which, if you think about it, is what code actually is. 
+But one thing that really sets Git apart is its branching model.
+ Branching allows you to create independent local branches in your code.
+ This means you can try out new ideas, set aside branches for production work, jump back to earlier branches, and easily delete, merge, and recall branches at the click of a button.
+
+
+
+GITHUB:
+ GitHub is designed as a Git repository hosting service.
+ It’s an online database that allows you to keep track of and share your Git version control projects outside of your local computer/server.
+ Unlike Git, GitHub is exclusively cloud-based.
+ Also unlike Git, GitHub is a for-profit service (although basic repository-hosting features are available at no cost to those who are willing to create a user profile, making GitHub a popular choice for open-source projects).		
+That’s because, in addition to offering all of the features and advantages of Git, GitHub expands upon Git’s basic functionality. It presents an extremely intuitive, graphically represented user interface, and provides programmers with built-in control and task-management tools. Additional features can be implemented via the GitHub Marketplace service. And because GitHub is cloud-based, an individual’s Git repositories can be remotely accessed by any authorized person, from any computer, anywhere in the world (provided it has an internet connection). 
+Through GitHub, you can share your code with others, giving them the power to make revisions or edits on your various Git branches. This makes it possible for entire teams to coordinate together on single projects in real-time. 
+As changes are introduced, new branches are created, allowing the team to continue to revise the code without overwriting each other’s work. 
+These branches are like copies, and changes made on them do not reflect in the main directories on other users’ machines unless users choose to push/pull the changes to incorporate them. 
+There is also a GitHub desktop application available, which offers some additional functionality for experienced developers.
+
+Q2. GIT COMMANDS
+
+1) Git config command:
+This command configures the user. The Git config command is the first and necessary command used on the Git command line. This command sets the author name and email address to be used with your commits. Git config is also used in other scenarios.
+Syntax:git config --global user.name "ImDwivedi1"  
+
+2) Git Init command:
+This command is used to create a local repository.Syntax:git init Demo  
+
+3) Git clone command:
+This command is used to make a copy of a repository from an existing URL. If I want a local copy of my repository from GitHub, this command allows creating a local copy of that repository on your local directory from the repository URL.
+Syntax: git clone URL 
+
+4) Git add command
+This command is used to add one or more files to staging (Index) area.
+Syntax To add one file : git add Filename
+
+5) Git commit command
+Commit command is used in two scenarios. They are as follows.
+Git commit -m
+This command changes the head. It records or snapshots the file permanently in the version history with a message.
+Syntax:git commit -m " Commit Message"  
+ 
+
+Q3.   First, the project needs to be forked
+	then clone it by clicking on the clone button and copy the link, then open the terminal and use the command git clone and copy the link
+	go to the cloned directory by using the command cd [name of repository]
+	create a branch by using the command git checkout
+	make changes to the project and save it using git commit command 
+	now identify the remote's name for the repository using the git remote command
+	now push changes using git push origin command
+	now inorder to create pull request, go to the repository in github and click on the button "compare and pull request"
+	then click on create pull request.	
